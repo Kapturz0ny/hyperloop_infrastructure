@@ -1,0 +1,105 @@
+form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    border: 1px solid rgb(55, 180, 225);
+    border-radius: 5px;
+    padding: 0.5em 0.75em;
+    height: 2vh;
+    margin-bottom: 10px;
+}
+
+select {
+    height: 3vh;
+}
+
+input:focus {
+    outline: 0;
+}
+
+label
+{
+    color: #ddd;
+    margin-bottom:  2px;
+}
+
+button
+{
+    margin-top: 10px;
+    height: 3vh;
+}
+
+.filters
+{
+    padding: 10px 30px;
+    border-right: solid 5px black;
+}
+
+.catalogue {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#malfunctions-by-route {
+    list-style-type: none;
+    flex: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    border-right: solid 5px black;
+    flex: 1;
+}
+
+#malfunctions-by-month {
+    list-style-type: none;
+    flex: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    border-right: solid 5px black;
+    flex: 2;
+}
+
+.route-info {
+    background-color: #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: double black;
+    border-width: 5px 0px;
+}
+
+.malfunction-info {
+    background-color: #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: double black;
+    border-width: 5px 0px;
+}
+
+#malfunctions-by-route {
+    list-style-type: none;
+    flex: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    border-right: solid 5px black;
+    flex: 1;
+}
+
+#malfunctions-by-month {
+    list-style-type: none;
+    flex: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    border-right: solid 5px black;
+    flex: 2;
+}
+

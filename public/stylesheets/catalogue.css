@@ -1,0 +1,131 @@
+.catalogue {
+    width: 100%;
+    flex: 3;
+    display: flex;
+    overflow: hidden;
+}
+
+#route-catalogue {
+    list-style-type: none;
+    flex: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    border-right: solid 5px black;
+}
+#route-catalogue li:hover{
+    cursor: pointer;
+}
+.route-info {
+    background-color: #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: double black;
+    border-width: 5px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.route-info span {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex: 1;
+    white-space: pre;
+}
+.route-info span.Functional {
+    font-weight: bold;
+    color: green;
+}
+.route-info span.Out-Of-Order {
+    font-weight: bold;
+    color: darkorange;
+}
+.route-info:hover {
+    background-color: #ccc;
+}
+.route.selected {
+    color: red;
+}
+
+#filters-form {
+    background: #ddd;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    border: solid 5px black;
+    border-radius: 5px;
+}
+#filters-form span {
+    padding: 15px;
+    margin: 0px auto;
+    font-weight: bold;
+}
+#filters-form label {
+    width: 75%;
+}
+.inputs {
+    padding-bottom: 25px;
+    border-bottom: double 3px black;
+    display: flex;
+    justify-content: center;
+}
+.checkboxes {
+    flex-direction: column;
+}
+p {
+    margin: 5px;
+}
+input {
+    width: 45%;
+    height: 1.5em;
+    margin: 0px 5px;
+}
+.buttons {
+    margin: auto;
+}
+button {
+    width: 45%;
+    background-color: #ddd;
+    font-size: 1em;
+    color: black;
+    padding: 5px;
+    border: solid 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ccc;
+}
+
+#details-panel {
+    width: 100%;
+    padding: 10px;
+    flex: 1;
+    border-top: solid 5px black;
+    background-color: #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.inline-list {
+    display: flex;
+    flex-wrap: wrap; /* Aby elementy zawijały się w nowej linii, jeśli jest zbyt mało miejsca */
+    gap: 10px; /* Odstęp między elementami */
+}
+
+.details-panel h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-panel li {
+    color: #666;
+    padding: 5px 0;
+}

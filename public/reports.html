@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperloop Infrastructure</title>
+    <link rel="shorcut icon" type="image/x-icon" href="images/hyperloop.ico" />
+    <link rel="stylesheet" href="stylesheets/basic_design.css" />
+    <link rel="stylesheet" href="stylesheets/reports.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tabs">
+          <li><a href="catalogue.html">ROUTE CATALOGUE</a></li>
+          <li><a href="management.html">MANAGEMENT</a></li>
+          <li><a href="reports.html">REPORTS</a></li>
+          <li class="menu_button"><a href="menu.html">MAIN MENU</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <div class="welcome-box">
+          <h1>REPORTS</h1>
+        </div>
+        <div class="catalogue">
+            <article class="filters">
+                <form id="filters-form">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" />
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" />
+
+                    <label for="status-filter">Status:</label>
+                    <select id="status-filter">
+                      <option value="all">All</option>
+                      <option value="ongoing">Ongoing</option>
+                      <option value="finished">Fixed</option>
+                    </select>
+
+                    <button id="filter-button">FILTER</button>
+                    <button type="reset">CLEAR</button>
+                </form>
+
+            </article>
+
+          <ul id="malfunctions-by-month"></ul>
+          <ul id="malfunctions-by-route"></ul>
+      </div>
+    </div>
+    <script src="scripts/reports.js"></script>
+  </body>
+</html>

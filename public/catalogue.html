@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperloop Infrastructure</title>
+    <link rel="shorcut icon" type="image/x-icon" href="images/hyperloop.ico">
+    <link rel="stylesheet" href="stylesheets/basic_design.css">
+    <link rel="stylesheet" href="stylesheets/catalogue.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul class="tabs">
+                <li><a href="catalogue.html">ROUTE CATALOGUE</a></li>
+                <li><a href="management.html">MANAGEMENT</a></li>
+                <li><a href="reports.html">REPORTS</a></li>
+                <li class="menu_button"><a href="menu.html">MAIN MENU</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="welcome-box">
+                <h1>ROUTE CATALOGUE</h1>
+            </div>
+            <div class="catalogue">
+                <ul id="route-catalogue"></ul>
+                <form id="filters-form">
+                    <span>ROUTE LENGTH</span>
+                    <div class="inputs">
+                        <input type="number" id="minLength" placeholder="MIN LENGTH" min="0">
+                        <input type="number" id="maxLength" placeholder="MAX LENGTH" min="0">
+                    </div>
+                    <span>ROUTE TIME</span>
+                    <div class="inputs">
+                        <input type="number" id="minTime" placeholder="MIN TIME" min="0">
+                        <input type="number" id="maxTime" placeholder="MAX TIME" min="0">
+                    </div>
+                    <span>MALFUNCTIONING INFRASTRACTURE [any checked]</span>
+                    <div class="inputs checkboxes">
+                        <p><input type="checkbox" id="SEMAPHORE"><label for="SEMAPHORE">SEMAPHORE</label></p>
+                        <p><input type="checkbox" id="PORT"><label for="PORT">PRESSURIZATION PORT</label></p>
+                        <p><input type="checkbox" id="EXIT"><label for="EXIT">EXIT</label></p>
+                        <p><input type="checkbox" id="PYLON"><label for="PYLON">PYLON</label></p>
+                        <p><input type="checkbox" id="TUBING"><label for="TUBING">TUBING</label></p>
+                    </div>
+                    <div class="buttons">
+                        <button id="apply-button" type="submit">APPLY FILTERS</button>
+                        <button id="clear-button">CLEAR FILTERS</button>
+                    </div>
+                </form>
+            </div>
+            <div id="details-panel"></div>
+        </div>
+    </div>
+    <script src="scripts/catalogue.js"></script>
+</body>
+</html>

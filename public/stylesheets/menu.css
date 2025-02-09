@@ -1,0 +1,13 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.main-content {
+    background: url(../images/Hyperloop_capsule.png) center;
+}
+.welcome-box {
+    background-image: linear-gradient(#222, black);
+}
