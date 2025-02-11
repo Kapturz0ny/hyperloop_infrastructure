@@ -1,4 +1,4 @@
-# Zarządzanei infrastrukturą transportu Hyperloop
+# Zarządzanie infrastrukturą transportu Hyperloop
 
 **Autorzy:** Marcin Bagnowski, Zofia Jasina, Aleksandra Buczma, Julian Mossakowski, Maciej Kaniewski
 
